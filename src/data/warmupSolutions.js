@@ -420,15 +420,7 @@ solutions.arrayFront9 = function (nums) {
 };
 
 solutions.stringX = function (str) {
-  result = '';
-  front = str.substring(0, 1);
-  end = str.substring(str.length - 1);
-  for (i = 1; i < str.length - 1; i++) {
-    if (str.charAt(i) !== 'x') {
-      result += str.charAt(i);
-    }
-  }
-  return front + result + end;
+  return str.split("").filter((v,i,a) => i===0 || i===a.length-1 || v!=="x").join("");
 };
 
 solutions.array667 = function (nums) {
