@@ -606,7 +606,18 @@ module.exports = [
     title: 'Warmup-2',
     name: 'stringSplosion',
     question: 'Given a non-empty string like "Code" return a string like "CCoCodCode".',
-    inputs: [], // TODO: write inputs here
+    inputs: [
+      "('Hello')",
+      "('Hi')",
+      "('Heeololeo')",
+      "('HiHiHi')",
+      "('')",
+      "('Greetings')",
+      "('Chocolate')",
+      "('pi')",
+      "('Hello Kitten')",
+      "('hxaxpxpxy')",
+    ], 
   }, {
     title: 'Warmup-2',
     name: 'last2',
@@ -664,7 +675,20 @@ module.exports = [
     name: 'array123',
     question: `Given an array of ints, return true if the sequence of numbers 1, 2, 3
         appears in the array somewhere.`,
-    inputs: [], // TODO
+    inputs: [
+      '([1,2,9,3,4])',
+      '([1,2,3,4,9])',
+      '([1,2,3,4,5])',
+      '([9,2,3])',
+      '([1,9,9])',
+      '([1,2,3])',
+      '([1,9])',
+      '([5,5])',
+      '([2])',
+      '([9])',
+      '([])',
+      '([3,9,2,3,3])',
+    ],
   }, {
     title: 'Warmup-2',
     name: 'stringMatch',
