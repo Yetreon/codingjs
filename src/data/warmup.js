@@ -66,12 +66,15 @@ module.exports = [
     inputs: [
       '(true, 6)',
       '(true, 7)',
+      '(false, 8)',
+      '(true, 0)',
       '(false, 6)',
       '(true, 21)',
       '(false, 21)',
       '(true, 23)',
       '(false, 23)',
       '(true, 20)',
+      '(false, 19)',
       '(false, 12)',
     ],
   }, {
