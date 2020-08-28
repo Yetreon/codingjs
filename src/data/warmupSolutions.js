@@ -7,6 +7,10 @@ solutions.stringTimes = function (str, n) {
     return str.repeat(n);
   };
   
+solutions.weekEnd = function (weekday) {
+  return !weekday;
+};
+  
 solutions.sleepIn = function (weekday, vacation) {
   return !weekday || vacation;
 };
