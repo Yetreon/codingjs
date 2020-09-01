@@ -995,7 +995,7 @@ module.exports = [{
   "('y2bz')",
   "('zxyx')"
 ] },
-  { question: 'Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".',
+  { question: 'Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x". Also collapse whitespace in the resulting String.',
     title: 'String-3',
     name: 'withoutString',
     inputs: [

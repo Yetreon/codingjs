@@ -536,7 +536,7 @@ solutions.firstLast6 = function (nums) {
       return true;
   }
   
-  solutions.sameEnds = function (nums, len) {
+  solutions.arraySameEnds = function (nums, len) {
     let front = nums.slice(0, len);
     let end = nums.slice(nums.length - len);
   

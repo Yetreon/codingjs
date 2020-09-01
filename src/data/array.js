@@ -947,7 +947,7 @@ module.exports = [
   },
   {
     title: 'Array-2',
-    name: 'sameEnds',
+    name: 'arraySameEnds',
     inputs: [
     "([5, 6, 45, 99, 13, 5, 6], 1)",
     "([5, 6, 45, 99, 13, 5, 6], 2)",
