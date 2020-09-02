@@ -494,7 +494,7 @@ module.exports = [
   },
   {
     title: 'Logic-1',
-    name: 'lastDigit',
+    name: 'lastDigit3',
     inputs: [
       '(23, 19, 13)',
       '(23, 19, 12)',
