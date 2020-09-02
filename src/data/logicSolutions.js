@@ -184,7 +184,7 @@ solutions.cigarParty = function (cigars, isWeekend) {
   };
   
   solutions.lastDigit3 = function (a, b, c) {
-    return a % 10 == b % 10 || b % 10 == c % 10 || a % 10 == c;
+    return a % 10 == b % 10 || b % 10 == c % 10 || a % 10 == c % 10;
   };
   
   solutions.lessBy10 = function (a, b, c) {
