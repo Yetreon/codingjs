@@ -61,4 +61,20 @@ module.exports = [
       "(6)",
       "(7)"
    ] },
+   { question: 'Use the fibonacci sequence to encode the input string. Only change the order of the letters, not the actual letters. Use each character\'s distance from the back of the string as it\'s index. Use the index to get the fibonacci number at that position. Use the character at the position of that number in the original string, wrapping around the end when it\'s too large. if the character has already been used, move backwards until you find an unused character.',
+     title: 'QuizQuestions',
+     name: 'fibScrabmble',
+     inputs: [
+      "('this is hard.')",
+      "('you need many tries.')",
+      "('the romans are attacking from the west.')",
+      "('let's kill caesar.')",
+      "('and so on')",
+      "('')",
+      "('1251862591')",
+      "('ihihihihihi')",
+      "('breakfast is at 7:00')",
+      "('maybe try arrays')",
+      "('a')"
+  ] },
 ];
