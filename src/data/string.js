@@ -101,7 +101,7 @@ module.exports = [{
       "('0123456789')",
       "('kitten')",
     ],
-    question: 'Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".',
+    question: 'Given a string of even length, return the first half. So the string "WooHoo" yields "Woo". For strings with odd length, return the entire string.',
   }, {
     title: 'String-1',
     name: 'withoutEnd',

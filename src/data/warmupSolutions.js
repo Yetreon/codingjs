@@ -391,7 +391,7 @@ solutions.stringYak = function (str) {
 };
 
 solutions.has271 = function (nums) {
-  return !!(nums.join('').match(/271/g));
+  return nums.some((v,i,a) => (v===2 && a[i+1]===v+5 && (a[i+2] === v-1 || a[i+2] === v-2 ||a[i+2] === v-3 ||a[i+2] === v || a[i+2] === v+1) || (a[i+1]===v+5 && a[i+2] === v-1)));
 };
 
 solutions.countXX = function (str) {
