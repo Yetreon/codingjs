@@ -419,7 +419,7 @@ solutions.cigarParty = function (cigars, isWeekend) {
         decimal = Math.floor(decimal/16);
         result = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'][digit]+result;
       }
-      if(decimal!==0){
+      if(!(decimal===0 && result.length>0)){
         result = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'][decimal]+result;
       }
       return result;
