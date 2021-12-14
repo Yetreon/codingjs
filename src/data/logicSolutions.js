@@ -411,6 +411,19 @@ solutions.cigarParty = function (cigars, isWeekend) {
   
     return smallsNeeded;
   };
+
+  solutions.hexEncode = function (decimal) {
+      var result = "";
+      while(decimal >= 16){
+        var digit = decimal - (16 * Math.floor(decimal/16));
+        decimal = Math.floor(decimal/16);
+        result = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'][digit]+result;
+      }
+      if(decimal!==0){
+        result = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'][decimal]+result;
+      }
+      return result;
+  };
   
   
     // {

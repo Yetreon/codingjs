@@ -678,6 +678,7 @@ module.exports = [{
           "name": "bobThere",
           "inputs": [
           "('abcbob')",
+          "('ooobbabcboob')",
           "('b9b')",
           "('bac')",
           "('bbb')",

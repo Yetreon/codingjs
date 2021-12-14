@@ -887,5 +887,15 @@ module.exports = [
       '(7, 1, 12)',
       '(7, 1, 13)',
       '(7, 2, 13)',
-    ] }
+    ] },
+    { question: 'We want to encode a given decimal number into an hexadecimal number represented using a string containing the characters 0-9 and A-F.',
+      title: 'Logic-2',
+      name: 'hexEncode',
+      inputs: [
+        '(123456)',
+        '(0)',
+        '(15)',
+        '(16)',
+        '(907)',
+      ] }
   ];
