@@ -794,7 +794,7 @@ module.exports = [
   },
   {
     title: 'Array-2',
-    name: 'matchUp',
+    name: 'matchUp2',
     inputs: [
       "([1, 2, 3], [2, 3, 10])",
       "([1, 2, 3], [2, 3, 5])",

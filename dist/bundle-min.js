@@ -1799,7 +1799,7 @@ module.exports=solutions},{}],12:[function(require,module,exports){module.export
     form of most types.`},{title:'Array-2',name:'no14',inputs:["([1, 2, 3])","([1, 2, 3, 4])","([2, 3, 4])","([1, 1, 4, 4])","([2, 2, 4, 4])","([2, 3, 4, 1])","([2, 1, 1])","([1, 4])","([2])","([2, 1])","([1])","([4])","([])","([1, 1, 1, 1])","([9, 4, 4, 1])","([4, 2, 3, 1])","([4, 2, 3, 5])","([4, 4, 2])","([1, 4, 4])",],question:`Given an array of ints, return true if it contains no 1's or it contains no 4's.`},{title:'Array-2',name:'isEverywhere',inputs:["([1, 2, 1, 3], 1)","([1, 2, 1, 3], 2)","([1, 2, 1, 3, 4], 1)","([2, 1, 2, 1], 1)","([2, 1, 2, 1], 2)","([2, 1, 2, 3, 1], 2)","([3, 1], 3)","([3, 1], 2)","([3], 1)","([], 1)","([1, 2, 1, 2, 3, 2, 5], 2)","([1, 2, 1, 1, 1, 2], 2)","([2, 1, 2, 1, 1, 2], 2)","([2, 1, 2, 2, 2, 1, 1, 2], 2)","([2, 1, 2, 2, 2, 1, 2, 1], 2)","([2, 1, 2, 1, 2], 2)",],question:`We'll say that a value is "everywhere" in an array if for every
     pair of adjacent elements in the array, at least one of the pair is that value.
     Return true if the given value is everywhere in the array.`},{title:'Array-2',name:'either24',inputs:["([1, 2, 2])","([4, 4, 1])","([4, 4, 1, 2, 2])","([1, 2, 3, 4])","([3, 5, 9])","([1, 2, 3, 4, 4])","([2, 2, 3, 4])","([1, 2, 3, 2, 2, 4])","([1, 2, 3, 2, 2, 4, 4])","([1, 2])","([2, 2])","([4, 4])","([2])","([])",],question:`Given an array of ints, return true if the array contains a 2
-    next to a 2 or a 4 next to a 4, but not both.`},{title:'Array-2',name:'matchUp',inputs:["([1, 2, 3], [2, 3, 10])","([1, 2, 3], [2, 3, 5])","([1, 2, 3], [2, 3, 3])","([5, 3], [5, 5])","([5, 3], [4, 4])","([5, 3], [3, 3])","([5, 3], [2, 2])","([5, 3], [1, 1])","([5, 3], [0, 0])","([4], [4])","([4], [5])",],question:`Given arrays nums1 and nums2 of the same length, for every element
+    next to a 2 or a 4 next to a 4, but not both.`},{title:'Array-2',name:'matchUp2',inputs:["([1, 2, 3], [2, 3, 10])","([1, 2, 3], [2, 3, 5])","([1, 2, 3], [2, 3, 3])","([5, 3], [5, 5])","([5, 3], [4, 4])","([5, 3], [3, 3])","([5, 3], [2, 2])","([5, 3], [1, 1])","([5, 3], [0, 0])","([4], [4])","([4], [5])",],question:`Given arrays nums1 and nums2 of the same length, for every element
     in nums1, consider the corresponding element in nums2 (at the same index).
     Return the count of the number of times that the two elements differ by 2 or
     less, but are not equal.`},{title:'Array-2',name:'has77',inputs:["([1, 7, 7])","([1, 7, 1, 7])","([1, 7, 1, 1, 7])","([7, 7, 1, 1, 7])","([2, 7, 2, 2, 7, 2])","([2, 7, 2, 2, 7, 7])","([7, 2, 7, 2, 2, 7])","([7, 2, 6, 2, 2, 7])","([7, 7, 7])","([7, 1, 7])","([7, 1, 1])","([1, 2])","([1, 7])","([7])",],question:`Given an array of ints, return true if the array contains two 7's
@@ -1940,7 +1940,7 @@ solutions.either24=function(nums){let has22=!1;let has44=!1;for(let i=0;i<nums.l
 has22=!0;if(nums[i]==4&&nums[i+1]==4)
 has44=!0}
 return has22!=has44}
-solutions.matchUp=function(nums1,nums2){let count=0;for(let i=0;i<nums1.length;i++){let diff=Math.abs(nums1[i]-nums2[i]);if(diff>0&&diff<3){count+=1}}
+solutions.matchUp2function(nums1,nums2){let count=0;for(let i=0;i<nums1.length;i++){let diff=Math.abs(nums1[i]-nums2[i]);if(diff>0&&diff<3){count+=1}}
 return count}
 solutions.has77=function(nums){for(let i=0;i<nums.length-1;i++){if((nums[i]==7&&nums[i+1]==7)||(nums[i]==7&&nums[i+2]==7)){return!0}}
 return!1}

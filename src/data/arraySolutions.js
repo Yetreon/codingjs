@@ -465,7 +465,7 @@ solutions.firstLast6 = function (nums) {
       return has22 != has44;
   }
   
-  solutions.matchUp = function (nums1, nums2) {
+  solutions.matchUp2 = function (nums1, nums2) {
     let count = 0;
   
       for (let i = 0; i < nums1.length; i++){
