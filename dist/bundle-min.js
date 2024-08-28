@@ -1940,7 +1940,7 @@ solutions.either24=function(nums){let has22=!1;let has44=!1;for(let i=0;i<nums.l
 has22=!0;if(nums[i]==4&&nums[i+1]==4)
 has44=!0}
 return has22!=has44}
-solutions.matchUp2function(nums1,nums2){let count=0;for(let i=0;i<nums1.length;i++){let diff=Math.abs(nums1[i]-nums2[i]);if(diff>0&&diff<3){count+=1}}
+solutions.matchUp2=function(nums1,nums2){let count=0;for(let i=0;i<nums1.length;i++){let diff=Math.abs(nums1[i]-nums2[i]);if(diff>0&&diff<3){count+=1}}
 return count}
 solutions.has77=function(nums){for(let i=0;i<nums.length-1;i++){if((nums[i]==7&&nums[i+1]==7)||(nums[i]==7&&nums[i+2]==7)){return!0}}
 return!1}
