@@ -132,6 +132,7 @@ solutions.firstLast6 = function (nums) {
   }
   
   solutions.findTheMedian = function (nums) {
+    nums.sort((a,b)=>a-b);
     if (nums.length % 2 === 1){
       return nums[(nums.length-1)/2];
     }

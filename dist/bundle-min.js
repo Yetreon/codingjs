@@ -1877,7 +1877,7 @@ solutions.double23=function(nums){if(nums.length<2){return!1}
 else if((nums[0]==2&&nums[1]==2)||(nums[0]==3&&nums[1]==3)){return!0}else{return!1}}
 solutions.fix23=function(nums){for(let i=0;i<nums.length;i++){if(nums[i]==2&&nums[i+1]==3){let tri=nums.indexOf(3);nums[tri]=0}}
 return nums}
-solutions.findTheMedian=function(nums){if(nums.length%2===1){return nums[(nums.length-1)/2]}
+solutions.findTheMedian=function(nums){nums.sort((a,b)=>a-b);if(nums.length%2===1){return nums[(nums.length-1)/2]}
 else{return(nums[nums.length/2-1]+nums[nums.length/2])/2}}
 solutions.start1=function(a,b){let count=0;if(a[0]==1){count+=1}
 if(b[0]==1){count+=1}
